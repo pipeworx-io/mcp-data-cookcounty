@@ -1,0 +1,58 @@
+# mcp-data-cookcounty
+
+Cook County Open Data (datacatalog.cookcountyil.gov) Socrata MCP.
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 951+ live data sources.
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `datasets` | Search the Cook County Open Data catalog of open datasets by keyword. Returns each dataset\'s resource_id, name, description, category and update date — pass the resource_id to query/metadata. |
+| `query` | Run a Socrata SoQL query against a Cook County Open Data dataset by resource_id (e.g. "cjeq-bs86"). Filter with where/select/group/order (SoQL clauses, without the leading $) plus limit/offset. Returns matching rows as JSON. |
+| `metadata` | Get a Cook County Open Data dataset\'s schema + metadata (columns, types, row count, category, last-updated) by resource_id, e.g. "cjeq-bs86". |
+
+## Quick Start
+
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
+
+```json
+{
+  "mcpServers": {
+    "data-cookcounty": {
+      "url": "https://gateway.pipeworx.io/data-cookcounty/mcp"
+    }
+  }
+}
+```
+
+Or connect to the full Pipeworx gateway for access to all 951+ data sources:
+
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
+```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Data Cookcounty data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
+
+## License
+
+MIT

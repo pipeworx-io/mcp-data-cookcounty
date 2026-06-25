@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-data-cookcounty",
+  "version": "0.1.0",
+  "description": "Cook County Open Data (datacatalog.cookcountyil.gov) Socrata MCP.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-cookcounty"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-data-cookcounty"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
