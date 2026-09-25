@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-cookcounty",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cook County Open Data (datacatalog.cookcountyil.gov) Socrata MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-fb533ba5c99d595ac0a99567451f8f4a1efcaa30fc1655c208ae98edbaef45c3",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-9be648501846373d22111b13e7315241e0f45a9a1d7a4cdfec32fd215c4bb694",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
